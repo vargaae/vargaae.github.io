@@ -1,0 +1,161 @@
+body {
+  background: content-box radial-gradient(white, grey);
+  text-align: center;
+  }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* MAINPHOTO & DIVS */
+
+img#photo {
+    max-width: 100%;
+    height: 100%;
+    border: 3px solid grey;
+  }
+
+.kontener {
+ /* border: solid black 2px; */
+  max-width: 1000px;
+  height: 400px;
+  align-content: center;
+  margin: auto;
+/*  margin-left: auto;
+  margin-right: auto;
+*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+.doboz {
+  text-align: center;
+  align-content: center;
+  color: white;
+  padding-top: 0px;
+  box-shadow: 0px 0px 5px 2px grey;
+  display: flex; 
+  position: relative;
+}
+
+#doboz-tarto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kontener #fokep {
+  width: 920px;
+  height: 400px;
+  background: lightgrey;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TITLE and DESCRIPTION */
+
+.gray-container {
+  width: 920px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  display: block;
+    }
+
+.gray-container h2 {
+  padding-left: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.gray-container p {
+  padding: 0 0rem 1rem 2rem;
+  margin-right: 3rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ARROWS */
+
+#nyiljobb {
+  transform: rotate(0.5turn);
+  }
+
+.kontener #nyilBalra {
+  width: 40px;
+  height: 400px;
+  background: content-box radial-gradient(white, lightgrey);
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.kontener #nyilJobbra {
+  width: 40px;
+  height: 400px;
+  background: content-box radial-gradient(white, lightgrey);
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.kontener #nyilJobbra:hover {
+  opacity: 1.0;
+  }
+
+.kontener #nyilBalra:hover {
+  opacity: 1.0;
+}
+
+/* THUMBNAILS */
+
+.kiskepek {
+  color: lightgrey;
+  border: solid thin #cfcfcf;
+  border-radius: 3px;
+  padding: 10px;
+  padding-bottom: 20px;
+ /* position: relative; */
+  text-align: center;
+  display: flex; 
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  margin-top: 10px;
+  padding-top: 0px;
+  box-shadow: 0px 0px 5px 2px grey;
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 5px 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.title {
+  display: none;
+  position: relative; 
+  background: black;
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+  top: -150px;
+  opacity: 0.8;
+}
+
+.thumbnail:hover .title {
+  display: block;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active, .thumbnail:hover {
+  background-color: #666;
+  color: white;
+  border: grey solid 2px;
+  opacity: 1.0;
+}

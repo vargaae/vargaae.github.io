@@ -1,60 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Image Slider</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <section class="section">
+      <div class="title">
+        <h2>my projects portfolio</h2>
+        <p>
+          Front-End developer projects - Andras Varga
+        </p>
+      </div>
 
-    <!--image slider start-->
-    <div class="slider">
-            <div class="slides">
-  <!--radio button start-->
-
-<input type="radio" name="radio-btn" id="radio1">
-<input type="radio" name="radio-btn" id="radio2">
-<input type="radio" name="radio-btn" id="radio3">
-<input type="radio" name="radio-btn" id="radio4">
-
-    <!--radio button end-->
-
-      <!--slide images start-->
-      <div class="slide first">
-        <img src="1.jpg" alt="">
+      <div class="about-center section-center">
+        <div class="about-img" id="image">
+          <img src="./hero-bcg-original.jpeg" alt="">
         </div>
-        <div class="slide">
-          <img src="2.jpg" alt="">
+        <article class="about">
+          <!-- btn container -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="myprojects">myprojects</button>
+            <button onclick="myFunction()" class="tab-btn" data-id="project1">GastroApp</button>
+            <button onclick="myFunction()" class="tab-btn" data-id="project2">GastroAppJS</button>
+            <button onclick="myFunction()" class="tab-btn" data-id="project3">ImageViewer</button>
+            <button onclick="myFunction()" class="tab-btn" data-id="project4">ImageSlider</button>
+            <button onclick="myFunction()" class="tab-btn" data-id="project5">ImageGallery</button>
           </div>
-          <div class="slide">
-            <img src="3.jpg" alt="">
+          <div class="about-content">
+            <!-- single item -->
+            <div class="content active" id="myprojects">
+              <h4>myProjectsPage</h4>
+              <p>
+                GastroApp with JavaScript<br>
+                GastroApp with Angular<br>
+                Planned: MoviesApp with Angular<br>
+                ImageViewerApp with JavaScript<br>
+                ImageSliderApp with JavaScript<br>
+                GalleryApp with JavaScript
+              </p>
             </div>
-            <div class="slide">
-              <img src="4.jpg" alt="">
-              </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="project1">
+              <h4>project1 myGastroApps</h4>
+              <p>
+                myGastroApp
+              </p>
+              <ul>
+                <li>With this project I have learnt and practised:</li>
+                <li>Angular</li>
+                <li>TypeScript</li>
+                <li>=></li>
+                
+                <li><h4><a href="https://vaprojektem.stackblitz.io/?fbclid=IwAR32X08JPGqBWpkaQ3vYL5jQv_hmDA1C35_Ua3SHPmJF3GJGbM73Q_kS19o" target="_blank">Angular project</h4></a></li>
+              </ul>
             </div>
-
-      <!--slide images end-->
-                  <!--automatic navigation start-->
-<div class="navigation-auto">
-  <div class="auto-btn">
-    <div class="auto-btn1"></div>
-    <div class="auto-btn2"></div>
-    <div class="auto-btn3"></div>
-    <div class="auto-btn4"></div>
-  </div>
-</div>
-                  <!--automatic navigation end-->
-                  <!--manual navigation start-->
-                  <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                  </div>
-                  <!--manual navigation end-->
-    <!--image slider end-->
-
-    <script src="scripts.js"></script>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="project2">
+              <h4>project2 myGastroApps</h4>
+              <p>
+                myGastroAppJS
+              </p>
+              <ul>
+                <li>With this project I have learnt and practised:</li>
+                <li>HTML5+CSS3</li>
+                <li>JavaScript</li>
+                <li>=></li>
+                <li><h4><a href="./01-SajatProjekt-JSGyorstalpalo-myGastroApp20210417/index.html" target="_blank">My Java Script GastroApp project</h4></a></li>
+              </ul>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="project3">
+              <h4>project3 myImageViewer</h4>
+              <p>
+                I finished GreenFox's #myFirstApp course and the final task was this application:
+              </p>
+              <ul>
+                <li>On this course I have learnt and practised:</li>
+                <li>HTML5+CSS3+Using Git</li>
+                <li>JavaScript basics and the using of jQuery</li>
+                <li>then I translated jQuery to JavaScript</li>
+                <li>=></li>
+                
+                <li><h4><a href="02-SajatProjekt-myFirstAppToJS20210415/index.html" target="_blank">My first PhotoGallery App 2021</a></h4></li>
+              </ul>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="project4">
+              <h4>project4 myImageSlider</h4>
+              <p>
+                Fourth project
+              </p>
+              <ul>
+                <li>With this project I have learnt and practised:</li>
+                <li>HTML5+CSS3</li>
+                <li>JavaScript</li>
+                <li>=></li>
+                
+                <li><h4><a href="03 - SajatProjekt-Kepvetito/index.html" target="_blank">ImageSlider App 2021</a></h4></li>
+              </ul>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="project5">
+              <h4>project5 myImageGallery</h4>
+              <p>
+                Fifth project
+              </p>
+              <ul>
+                <li>With this project I have learnt and practised:</li>
+                <li>HTML5+CSS3</li>
+                <li>JavaScript</li>
+                <li>=></li>
+                
+                <li><h4><a href="03 - SajatProjekt-Kepvetito/index.html" target="_blank">PhotoGallery App 2021</a></h4></li>
+              </ul>
+            </div>
+            <!-- end of single item -->
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
   </body>
 </html>
