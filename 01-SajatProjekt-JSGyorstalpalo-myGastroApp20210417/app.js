@@ -57,7 +57,7 @@ products.forEach(product => {
     <p>${product.description}</p>
     <img src="./img/${product.picture}">
     <h3>${product.price}</h3>
-    <a id="${product.id}" class="addToCart">Kosárba</a>
+    <a id="${product.id}" class="addToCart">Étlapra</a>
     </div>`
 })
 
@@ -105,25 +105,15 @@ cartIcon.addEventListener('click', function () {
     const currentProduct = products.find(product => product.id == id)
         
     cartItems.innerHTML += `<li>
-    <button data-id="$currentProduct.id}">+</button>
-    ${cart[id]} db - ${currentProduct.name} * ${currentProduct.price} Ft/db</li>`
+      ${cart[id]} db - ${currentProduct.name} * ${currentProduct.price} Ft/db</li>`
   //  console.log(products.find(product => product.id == id).name) // ez kikeresi a vásárolt terméket és kiírja az adatait a tömbből
     console.log(cart[id])
   //  console.log(products.find(product => product.id == id).price) // ez kikeresi a vásárolt terméket és kiírja a termék árát a tömbből
 //  adjunk hozzá ennek az értékét a teljes összeghez
-total += currentProduct.price * cart[id]
+// total += currentProduct.price * cart[id]
 }
 // a végén jelenítsük meg a teljes vásárlási összeget
 
-cartItems.innerHTML += `<li>Összesen: ${total} Ft</li>`
+// cartItems.innerHTML += `<li>Összesen: ${total} Ft</li>`
 
 })
-
-// TODO Függvények ELMÉLET
-//  FAT ARROW
-const addToCartTest = () => {
-    console.log('addToCartTest függvény futása')
-    // ide jön a többi
-}
-
-// Hagyományos
