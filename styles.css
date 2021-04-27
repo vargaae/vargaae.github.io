@@ -108,6 +108,10 @@ h3 {
 h4 {
   font-size: 0.875rem;
 }
+a:hover {
+  color: #222;
+  font-size: 1.25rem;
+}
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
