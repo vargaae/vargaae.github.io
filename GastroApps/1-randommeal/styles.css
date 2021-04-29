@@ -68,13 +68,16 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
+  background: content-box radial-gradient(white, grey);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
 ul {
   list-style-type: none;
+}
+button {
+  font-size: 1.2rem;
 }
 a {
   text-decoration: none;
@@ -163,7 +166,7 @@ main {
 }
 .title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .underline {
   height: 0.25rem;
@@ -206,7 +209,8 @@ main {
 .img-container::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f10e";
+  font-size: 1.5rem;
+  content: "\1F37D";
   position: absolute;
   top: 0;
   left: 0;
@@ -229,10 +233,10 @@ main {
   right: -0.5rem;
   border-radius: 50%;
 }
-#author {
+#meal-name {
   margin-bottom: 0.25rem;
 }
-#job {
+#ingridients {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   color: var(--clr-primary-5);
@@ -242,7 +246,11 @@ main {
   margin-bottom: 0.75rem;
 }
 .prev-btn,
-.next-btn {
+.next-btn, 
+.morebtn,
+.more-btn,
+.lessbtn,
+.less-btn {
   color: var(--clr-primary-7);
   font-size: 1.25rem;
   background: transparent;
@@ -256,7 +264,7 @@ main {
   color: var(--clr-primary-5);
 }
 .random-btn {
-  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   background: var(--clr-primary-10);
   color: var(--clr-primary-5);
   padding: 0.25rem 0.5rem;
